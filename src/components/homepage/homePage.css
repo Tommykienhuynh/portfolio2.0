@@ -1,0 +1,27 @@
+@media screen and (max-width: 800px) {
+  .mainContainer {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .mainContainer {
+    padding-left: 27rem;
+    padding-right: 27rem;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .mainContainer {
+    padding-left: 32rem;
+    padding-right: 32rem;
+  }
+}
+
+@media screen and (min-width: 1750px) {
+  .mainContainer {
+    padding-left: 38rem;
+    padding-right: 38rem;
+  }
+}

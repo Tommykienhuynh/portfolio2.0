@@ -1,0 +1,29 @@
+.eyeBox {
+  display: flex;
+}
+
+.eyeBox .eye {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: block;
+  background-color: #fff;
+  margin: 0 10px;
+  border-radius: 50%;
+  box-shadow: 0 5px 45px rgba(0, 0, 0, 0.2), inset 0 0 15px #204749,
+    inset 0 0 25px #204749;
+}
+
+.eyeBox .eye::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: black;
+  border: 3px solid #2cc0c9;
+  box-sizing: border-box;
+}
