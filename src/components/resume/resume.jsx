@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from "../navbar/navbar";
-import Resume from "../../assets/TommyKHuynhResume.pdf"
+import Resume from "../../assets/tommyKHuynhResume.pdf"
 import "../homepage/homePage.css";
 import Footer from "../footer";
 import {motion} from 'framer-motion/dist/framer-motion';

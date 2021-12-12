@@ -10,7 +10,7 @@ import {motion} from 'framer-motion/dist/framer-motion';
 
 export default function Homepage() {
 
-    const projectContainer = useRef();
+    /* const projectContainer = useRef(); */
    // console.log(projectContainer);
 
   
@@ -19,7 +19,7 @@ export default function Homepage() {
         <div className="  mainContainer h-full  mx-auto box-border  justify-center bg-backgroundColor px-80
            
         ">
-            <Navbar projects={projectContainer} />
+            <Navbar /* projects={projectContainer} */ />
            
 
             <motion.div 
@@ -28,7 +28,7 @@ export default function Homepage() {
      transition={{duration: 0.8}}   >
           <ProfileEyes />
         <Header /> 
-        <Projects ref={projectContainer} />
+        <Projects /* ref={projectContainer} */ />
         <Footer />
      
     
