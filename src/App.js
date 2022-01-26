@@ -45,13 +45,12 @@ function App() {
        <Routes>
          <Route path="/" exact element={<Homepage />} />
          <Route path="/resume" exact element={<Resume/>} />
-     
-              <Route path="/edufy" exact element={<ProjectPage  
+         <Route path="/edufy" exact element={<ProjectPage  
          name={"Edufy"}
          desc={"A game based on productivity to help users finish real world tasks by giving them in game rewards."}
          lang={"React, NodeJS, MongoDB"}
          git={"https://github.com/Tommykienhuynh/Edufy.space"}
-         web={"https://www.edufy.space/"}
+         web={"https://devpost.com/software/eudfy-education-for-you"}
          mainPic={edufyPic}
          pic1={edufyOne}
          pic2={edufyTwo}
