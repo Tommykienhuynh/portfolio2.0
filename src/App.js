@@ -16,6 +16,9 @@ import Resume from "./components/resume/resume";
 import aniAlgoPic from "./assets/projectImgs/aniAlgoPic.png";
 import moodTrackerPic from "./assets/projectImgs/moodTracker.png";
 import travelEasyPic from "./assets/projectImgs/travelEasy.png";
+import unavsaPic from "./assets/projectImgs/unavsa.png";
+import unavsaTwo from "./assets/projectImgs/unavsaTwo.png";
+import unavsaThree from "./assets/projectImgs/unavsaThree.png";
 import edufyPic from "./assets/projectImgs/edufyPic.png";
 import edufyOne from "./assets/projectImgs/edufyOne.png";
 import edufyTwo from "./assets/projectImgs/edufy2.png";
@@ -104,7 +107,16 @@ function App() {
          git={"https://github.com/Tommykienhuynh/UNAVSACalendar"}
          web={"https://event-cal.glitch.me/calendar.html"}
          mainPic={calendarPic}
-      
+         />} />
+         <Route path="/unavsaPage" exact element={<ProjectPage  
+         name={"Club Calendar "}
+         desc={"Manage and updated UNAVSA.org. "}
+         lang={"Javascript, BootStrap"}
+         web={"https://unavsa.org/"}
+         mainPic={unavsaPic}
+         pic1={unavsaTwo}
+         pic2={unavsaThree}
+         
          />} />
          
        </Routes>

@@ -8,13 +8,14 @@ import travelEasyPic from "../../assets/projectImgs/travelEasy.png";
 import edufyPic from "../../assets/projectImgs/edufyPic.png";
 import dataBricks from "../../assets/projectImgs/dataBricksPic.png"
 import calendarPic from "../../assets/projectImgs/calendar.png";
+import unavsaPic from "../../assets/projectImgs/unavsa.png";
 
 export default function projects() {
     return (
         <div>
               <div className="projectSec mt-10">
             <h3 className="font-cyber text-primaryPurple  mb-10 text-lg font-thin italic"> Projects </h3>
-                <div className="grid grid-cols-2 justify-items-center mt-5 ">
+                <div className=" grid-cols-1 sm:grid grid-cols-2 justify-items-center mt-5  ">
                   
                       <Card name={"Edufy"}
                         desc={"A productivity game to help finish tasks. Includes timer, todo list, and focus mode. "}
@@ -22,6 +23,12 @@ export default function projects() {
                         pic={edufyPic}
                         pageLink={"edufy"}
                       
+                    />
+                     <Card name={"UNAVSA Website"}
+                        desc={"Manage and updated website for nonprofit 501c3 UNAVSA"}
+                        lang={"Javascript, Wordpress, CSS"}
+                        pic={unavsaPic}
+                        pageLink={"unavsaPage"}    
                     />
                       <Card name={"AniAlgo"}
                         desc={"Applications that provide an animated representation of sorting algorithms."}
@@ -55,9 +62,9 @@ export default function projects() {
                         desc={"Mood journal app that lets you track and log your daily moods."}
                         lang={"Javascript, BootStrap"}
                         pic={calendarPic}
-                        pageLink={"clubCalendar"}
-                      
+                        pageLink={"clubCalendar"}    
                     />
+                    
                    
                   
                 </div>
