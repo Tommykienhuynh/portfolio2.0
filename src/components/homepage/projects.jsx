@@ -35,7 +35,7 @@ export default function projects() {
                         lang={"ReactJS"}
                         pic={aniAlgoPic}
                         pageLink={"aniAlgo"}
-                      
+
                     />
                       <Card name={"Travel Easy"}
                         desc={"Travel website that provides information on where to go for a vacation trip."}
