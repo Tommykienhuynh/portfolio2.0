@@ -18,8 +18,8 @@ export default function Card({name, desc, lang, pic, pageLink}) {
   
 
     return (
-        <div className={ hover ? "flex flex-wrap flex-col place-items-center rounded-xl w-3/4 h-min bg-backgroundSecondary shadow-md mb-5 border-2 border-secondaryPurple" :
-        "rounded-xl w-3/4 h-72 bg-backgroundSecondary   shadow-md mb-5"
+        <div className={ hover ? "flex flex-wrap flex-col place-items-center rounded-xl w-3/4  h-72 bg-backgroundSecondary shadow-md mb-5 border-2 border-secondaryPurple" :
+        "rounded-xl w-3/4 h-72 bg-backgroundSecondary   shadow-md mb-5 md:w-64 h-80"
     } 
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}

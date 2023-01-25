@@ -35,7 +35,6 @@ export default function ProfileEyes()
     function eyeBall()  {
         let x = (eyeRef.current.getBoundingClientRect().left) + (eyeRef.current.getBoundingClientRect().width/ 2);
         let y = (eyeRef.current.getBoundingClientRect().top) + (eyeRef.current.getBoundingClientRect().height / 2);
-
         let radian = Math.atan2(position.x - x, position.y - y);
         let rotation = (radian * (180 / Math.PI) * -1) + 270;
     
@@ -46,7 +45,7 @@ export default function ProfileEyes()
  
 
     return (
-        <div className="mx-auto my-12  flex flex-col items-center ">
+        <div className="mx-auto my-12  flex flex-col items-center max-w-2xl  ">
            <div class="rounded-full h-44 w-44 flex items-center justify-center border-2 border-primaryBlue bg-backgroundBlue mb-10">
              
           {/*  <div className="eyeBox">
@@ -106,10 +105,6 @@ export default function ProfileEyes()
 <circle cx="57.5" cy="82.5" r="6" fill="#2CC0C9" stroke="black"/>
 <circle cx="106.5" cy="83.5" r="6" fill="#2CC0C9" stroke="black"/>
 </svg>
-
-
-      
-
                </div>
 
              

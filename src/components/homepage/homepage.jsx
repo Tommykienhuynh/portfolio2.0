@@ -16,9 +16,7 @@ export default function Homepage() {
   
 
     return (
-        <div className="  mainContainer h-full  mx-auto box-border  justify-center bg-backgroundColor px-80
-           
-        ">
+        <div className="  mainContainer h-full  mx-auto box-border  justify-center bg-backgroundColor w-full px-80 sm:mx-96  ">
             <Navbar /* projects={projectContainer} */ />
            
 

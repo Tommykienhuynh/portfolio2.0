@@ -13,9 +13,9 @@ import unavsaPic from "../../assets/projectImgs/unavsa.png";
 export default function projects() {
     return (
         <div>
-              <div className="projectSec mt-10">
+              <div className="projectSec mt-10 max-w-2xl  ">
             <h3 className="font-cyber text-primaryPurple  mb-10 text-lg font-thin italic"> Projects </h3>
-                <div className=" grid-cols-1 sm:grid grid-cols-2 justify-items-center mt-5  ">
+                <div className=" w-full grid-cols-1 flex flex-col justify-center sm:grid grid-cols-2 justify-items-center items-center mt-5 lg:gap-4  ">
                   
                       <Card name={"Edufy"}
                         desc={"A productivity game to help finish tasks. Includes timer, todo list, and focus mode. "}

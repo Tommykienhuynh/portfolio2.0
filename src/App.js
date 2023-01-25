@@ -10,6 +10,7 @@ import {
 import ScrollToTop from "./scrollToTop";
 
 import Homepage from "./components/homepage/homepage";
+import MobileHome from "./components/homepage/mobile.jsx"
 import ProjectPage from "./components/homepage/projectPages/projectPage";
 import Resume from "./components/resume/resume";
 
@@ -32,21 +33,13 @@ import travelOne from "./assets/projectImgs/travelEasyOne.png";
 import dataBricks from "./assets/projectImgs/dataBricksPic.png"
 import calendarPic from "./assets/projectImgs/calendar.png";
 
-
-
-
-
-
-
-
-
-
 function App() {
   return (
     <Router>
        <ScrollToTop />
        <Routes>
-         <Route path="/" exact element={<Homepage />} />
+        {/*  <Route path="/" exact element={<Homepage />} /> */}
+         <Route path="/" exact element={<MobileHome/>} />
          <Route path="/resume" exact element={<Resume/>} />
          <Route path="/edufy" exact element={<ProjectPage  
          name={"Edufy"}
