@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLightbulb } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import {useNavigate, Lin} from 'react-router-dom';
-import resume from '../resume/resume';
+import resume from '../../assets/tommyHuynhFinal.pdf';
 
 
 
@@ -25,7 +25,6 @@ export default function Navbar({projects}) {
         projects.current.scrollIntoView();
     }
     
- 
 
     return (
         <nav className="flex min-w-full flex-row justify-between align-middle w-full sticky bg-backgroundTrans md:w-12  top-0 pt-5 pb-2">
@@ -40,8 +39,10 @@ export default function Navbar({projects}) {
                  > Tommy Huynh </h1>
               {/*   <div className="nightMode"></div> */}
                 <div className="inline-flex font-main text-base ">
-                 {/*    <small onClick={scrollToProject} className="ml-2 font-main text-white hover:text-primaryPurple cursor-pointer"> Projects </small> */}
-                    <small onClick={routeResume}  className="ml-2 font-main text-white hover:text-primaryPurple cursor-pointer"> Resume </small>
+                    <small onClick={scrollToProject}  className="ml-2  font-main text-white hover:text-primaryPurple cursor-pointer"> Blog </small>
+                    <a  href={resume} without rel="noopener noreferrer" target="_blank">
+                        <small className="ml-2 font-main text-white hover:text-primaryPurple cursor-pointer"  > Resume </small>
+                     </a>
   
                    <a href="https://github.com/Tommykienhuynh" target="_blank" rel="noopener noreferrer" > <FontAwesomeIcon title="Github" className="ml-5 text-2xl text-white cursor-pointer 
                         hover:text-primaryPurple
@@ -52,7 +53,7 @@ export default function Navbar({projects}) {
                     " icon={faLinkedin} /> 
                     </a>
                 </div>
-          
+
         </nav>
     )
 }

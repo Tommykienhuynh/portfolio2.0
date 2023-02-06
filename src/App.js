@@ -10,7 +10,6 @@ import {
 import ScrollToTop from "./scrollToTop";
 
 import Homepage from "./components/homepage/homepage";
-import MobileHome from "./components/homepage/mobile.jsx"
 import ProjectPage from "./components/homepage/projectPages/projectPage";
 import Resume from "./components/resume/resume";
 
@@ -38,8 +37,8 @@ function App() {
     <Router>
        <ScrollToTop />
        <Routes>
-        {/*  <Route path="/" exact element={<Homepage />} /> */}
-         <Route path="/" exact element={<MobileHome/>} />
+        <Route path="/" exact element={<Homepage />} />
+   
          <Route path="/resume" exact element={<Resume/>} />
          <Route path="/edufy" exact element={<ProjectPage  
          name={"Edufy"}
