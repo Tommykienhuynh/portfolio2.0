@@ -1,4 +1,3 @@
-
 import {
   BrowserRouter as Router,
   Routes,
@@ -12,6 +11,7 @@ import ScrollToTop from "./scrollToTop";
 import Homepage from "./components/homepage/homepage";
 import ProjectPage from "./components/homepage/projectPages/projectPage";
 import Resume from "./components/resume/resume";
+import Blog from "./components/blog/blog.jsx";
 
 import aniAlgoPic from "./assets/projectImgs/aniAlgoPic.png";
 import moodTrackerPic from "./assets/projectImgs/moodTracker.png";
@@ -38,7 +38,6 @@ function App() {
        <ScrollToTop />
        <Routes>
         <Route path="/" exact element={<Homepage />} />
-   
          <Route path="/resume" exact element={<Resume/>} />
          <Route path="/edufy" exact element={<ProjectPage  
          name={"Edufy"}
@@ -107,12 +106,10 @@ function App() {
          web={"https://unavsa.org/"}
          mainPic={unavsaPic}
          pic1={unavsaTwo}
-         pic2={unavsaThree}
-         
-         />} />
-         
+         pic2={unavsaThree}         
+         />} />         
+         <Route path="/blog" exact element={<Blog />} />
        </Routes>
-     
     </Router>
   );
 }

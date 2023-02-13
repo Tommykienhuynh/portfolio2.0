@@ -4,7 +4,7 @@ import Card from "../homepage/card";
 
 import aniAlgoPic from "../../assets/projectImgs/aniAlgoPic.png";
 import moodTrackerPic from "../../assets/projectImgs/moodTracker.png";
-import travelEasyPic from "../../assets/projectImgs/travelEasy.png";
+import travelEasyPic from "../../assets/projectImgs/easyTravel.PNG";
 import edufyPic from "../../assets/projectImgs/edufyPic.png";
 import dataBricks from "../../assets/projectImgs/dataBricksPic.png"
 import calendarPic from "../../assets/projectImgs/calendar.png";
@@ -13,15 +13,14 @@ import unavsaPic from "../../assets/projectImgs/unavsa.png";
 export default function projects() {
     return (
         <div>
-              <div className="projectSec mt-10 max-w-2xl  ">
-            <h3 className="font-cyber text-primaryPurple  mb-10 text-lg font-thin italic"> Projects </h3>
-                <div className=" w-full grid-cols-1 flex flex-col justify-center sm:grid grid-cols-2 justify-items-center items-center mt-5 lg:gap-4  ">
+              <div className="projectSec  max-w-2xl   ">
+            <h3 className="font-cyber text-primaryBlue text-2xl pt-10 text-center   text-lg font-thin italic lg:mt-10"> Projects </h3>
+                <div className=" w-full grid-cols-1 flex flex-col justify-center sm:grid grid-cols-2 justify-items-center items-center  lg:gap-4   ">
                       <Card name={"Edufy"}
                         desc={"A productivity game to help finish tasks. Includes timer, todo list, and focus mode. "}
                         lang={"React, NodeJS, MongoDB"}
                         pic={edufyPic}
                         pageLink={"edufy"}
-                      
                     />
                      <Card name={"UNAVSA Website"}
                         desc={"Manage and updated website for nonprofit 501c3 UNAVSA"}
@@ -63,9 +62,6 @@ export default function projects() {
                         pic={calendarPic}
                         pageLink={"clubCalendar"}    
                     />
-                    
-                   
-                  
                 </div>
         </div>
         </div>

@@ -5,7 +5,7 @@ import HeadShot from "../../assets/ProfilePicture4.png"
 
 export default function header() {
     return (
-        <div className='flex flex-col w-full justify-center items-center '>
+        <div className='flex flex-col w-full justify-center items-center  '>
         <div className="flex flex-col w-full justify-center items-center pt-5 w-full max-w-2xl  sm:flex-row-reverse justify-between items-center  ">
         <div className="profileContainer  rounded justify-center ">
             <div class="rounded-full h-32 w-32 flex  mb-10 sm:h-28 w-28 "> 

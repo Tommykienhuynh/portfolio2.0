@@ -5,14 +5,13 @@ import Navbar from "../../navbar/navbar";
 import Carousel from 'react-elastic-carousel';
 import {motion} from "framer-motion/dist/framer-motion";
 
-
+import useWindowSize from "../useWindowSize";
 
 export default function ProjectPage({name, desc, lang, git, web, mainPic, pic1, pic2, pic3, pic4}) {
-
-
+    const [isPopUp, setIsPopUp] = useState(false);
     const [onHover, setOnHover] = useState(false);
+    let size = useWindowSize();
     const carousel = React.useRef();
-
     /* const breakPoints= [
         {width: 400, itemsToShow: 1},
         {width: 480, itemsToShow: 2},
@@ -26,8 +25,8 @@ export default function ProjectPage({name, desc, lang, git, web, mainPic, pic1, 
       animate={{ y:0, opacity: 1}}
      transition={{duration: 0.5}}
         
-        className="h-full px-80 bg-backgroundColor mainContainer ">
-           <Navbar />
+        className="mainContainer h-full w-full box-border px-4 flex flex-col justify-center bg-backgroundColor sm:px-32 lg:items-center xl:px-56 ">
+           <Navbar setIsPopUp={setIsPopUp} size={size} /> 
             <div onClick="" onMouseEnter={() => setOnHover(true)}
         onMouseLeave={() => setOnHover(false)}  className="bg-white rounded-md w-3/4 h-48 mx-auto border-box mt-20 projectHeaderIMG
             hover:cursor-pointer">
@@ -42,7 +41,6 @@ export default function ProjectPage({name, desc, lang, git, web, mainPic, pic1, 
             <div className="projectInfoBox flex flex-col  mt-5 ">
             <h1 className="font-cyber justify-items-start text-2xl text-primaryBlue" > {name} </h1>
             <small className="text-white mt-5 font-main mb-10 text-sm">  {desc} </small>
-
 
             <div className="linksContainer mt-1 flex flex-row ">
             <small className="mr-2 font-cyber text-base text-primaryPurple">   Languages: </small>
@@ -65,11 +63,7 @@ export default function ProjectPage({name, desc, lang, git, web, mainPic, pic1, 
                     <img   src={pic3} />
                 </Carousel>
  
-            
-
-
             </div>
-
         </motion.div>
     )
 }
