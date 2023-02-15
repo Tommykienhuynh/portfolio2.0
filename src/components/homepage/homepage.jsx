@@ -25,7 +25,7 @@ export default function Homepage() {
                     hover:bg-opacity-70"> 
             <FontAwesomeIcon title="light mode coming soon" className="text-xl self-center mt-1 text-backgroundSecondary" icon={faLightbulb} />
           </div> */}
-          <Navbar setIsPopUp={setIsPopUp} size={size} setIsPopUp={setIsPopUp} /* projects={projectContainer} */ />      
+          <Navbar setIsPopUp={setIsPopUp} size={size}  /* projects={projectContainer} */ />      
           {size.width > 600 && <ProfileEyes /> }
           <Header /> 
          {/*  <Projects  /> */}
