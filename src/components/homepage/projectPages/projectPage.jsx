@@ -6,6 +6,10 @@ import Carousel from 'react-elastic-carousel';
 import NavPopUP from '../../navbar/navPopUP';
 import {motion} from "framer-motion/dist/framer-motion";
 
+/* Font-Awesome Icons */
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+
 import useWindowSize from "../useWindowSize";
 
 export default function ProjectPage({name, desc, lang, git, web, mainPic, pic1, pic2, pic3, pic4}) {
@@ -27,24 +31,25 @@ export default function ProjectPage({name, desc, lang, git, web, mainPic, pic1, 
             transition={{duration: 0.5}}
            /*  className="mainContainer max-h-full min-h-screen w-full box-border px-4 flex flex-col justify-start bg-backgroundColor items-center" */>
             {isPopUp ? <NavPopUP size={size} setIsPopUp={setIsPopUp} /> :
-            <section className='mainContainer max-h-full min-h-screen w-full box-border px-4 flex flex-col justify-start bg-backgroundColor items-center' > 
-           <Navbar setIsPopUp={setIsPopUp} size={size} /> 
-
-          
-            <img src={mainPic} className="w-5/6 rounded-md self-center justify-center mt-7 sm:max-h-52 max-w-52"/>
-            <h1 className='text-primaryBlue font-cyber text-2xl mt-5'> {name} </h1>
-            <div className='h-0.5 w-full mt-3 bg-backgroundSecondary sm:max-w-xl'> </div>
-            <p className='text-white font-main text-base mt-3 px-2'> 
-            {desc}
-            </p>
-            <ul className='mt-5 self-start'>
-                <li className='text-white flex flex-row'> <h3 className='text-base font-main text-secondaryPurple'> Languages: </h3>  {lang} </li>
-                <li className='text-white flex flex-row'> <h3 className='text-base font-main text-secondaryPurple'>  Github </h3>  </li>
-                <li className='text-white flex flex-row'> <h3 className='text-base font-main text-secondaryPurple'> Website Link: </h3>  </li>
-            </ul>
-            
-            <img src={pic2} className="w-5/6 rounded-md self-center justify-center mt-7 sm:max-h-52 max-w-52"/>
-
+            <section className='mainContainer max-h-full min-h-screen w-full box-border px-4  bg-backgroundColor flex flex-col justify-start  items-center ' > 
+                <div className=' flex flex-col justify-start  items-center sm:max-w-sm md:max-w-md'>
+                    <Navbar setIsPopUp={setIsPopUp} size={size} /> 
+                    <img src={mainPic} className="w-5/6 rounded-md self-center justify-center mt-7 sm:max-h-52 max-w-52"/>
+                    <h1 className='text-primaryBlue font-cyber text-2xl mt-5'> {name} </h1>
+                    <h3 className='text-sm font-main text-secondaryPurple mt-2'> {lang} </h3>
+                    <p className='text-white text-center px-5 font-main text-sm mt-7 px-2'> 
+                {desc}
+                    </p>
+                    <div className="flex flex-row mt-10 ">
+                        <button  className='rounded-lg border-4 border-primaryBlue bg-backgroundBlue text-secondaryBlue py-2 px-4 mr-3 hover:opacity-40 cursor-pointer'> <a href={web}> View Site </a> </button>
+                        <button className='rounded-lg border-4 border-primaryGreen bg-backgroundGreen text-primaryGreen py-2 px-4 hover:opacity-40 cursor-pointer'> <a href={git}> Github Repo </a></button>   
+                    </div>
+                    <div className='h-1 w-full mt-5 mb-5 bg-backgroundSecondary sm:max-w-xl'> </div>
+                    <img src={pic1} className="w-5/6 rounded-md self-center justify-center mt-7 sm:max-h-52 max-w-52"/>
+                    <img src={pic2} className="w-5/6 rounded-md self-center justify-center mt-7 sm:max-h-52 max-w-52"/>
+                    <img src={pic3} className="w-5/6 rounded-md self-center justify-center mt-7 sm:max-h-52 max-w-52"/>
+                    <img src={pic4} className="w-5/6 rounded-md self-center justify-center mt-7 sm:max-h-52 max-w-52"/>
+            </div>
             </section>
                 }
         </motion.div>
